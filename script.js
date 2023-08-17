@@ -30,15 +30,16 @@ function buttonNext() {
 }
 
 function resizeSlider() {
-    width = document.querySelector('.slider').offsetWidth;
-    sliderLine.style.width = width * images.length + 'px';
+    width = document.querySelector('.slider').offsetWidth
+    sliderLine.style.width = width * images.length + 'px'
     sliderOffset = width * count;
-    sliderLine.style.left = sliderOffset + 'px';
+    sliderLine.style.left = sliderOffset + 'px'
 
     images.forEach(item => {
-        item.style.width = width + 'px';
-        item.style.height = 'auto';
+        item.style.width = width + 'px'
+        item.style.height = 'auto'
     });
+    prev.style.visibility = 'hidden'
 }
 
 window.addEventListener('resize', resizeSlider)
