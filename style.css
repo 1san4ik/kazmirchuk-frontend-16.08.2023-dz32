@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: rgb(192, 191, 191);
+}
+
+.slider {
+    max-width: 905px;
+    height: auto;
+    display: block;
+    border: 2px solid black;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.slider-line {
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+button {
+    background-color: rgb(165, 240, 253);
+    width: 70px;
+    height: 30px;
+}
+
+button:hover {
+    background-color: rgb(40, 207, 236);
+}
+
+button:active {
+    background-color: rgb(2, 27, 83);
+    color: white;
+}
+
+.sliderPrev {
+    left: 0;
+    visibility: hidden;
+}
+
+.sliderNext {
+    right: 0;
+}
+
+.sliderPrev,
+.sliderNext {
+    background-color: rgb(165, 240, 253);
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
